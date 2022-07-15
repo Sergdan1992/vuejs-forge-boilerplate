@@ -7,7 +7,7 @@ declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     AppButton: typeof import('./src/components/AppButton.vue')['default']
     AppImage: typeof import('./src/components/AppImage.vue')['default']
-    AppPageHeading: typeof import("./src/components/AppPageHeading.vue")["default"];
+    AppPageHeading: typeof import('./src/components/AppPageHeading.vue')['default']
     BoardCard: typeof import('./src/components/BoardCard.vue')['default']
     BoardDragAndDrop: typeof import("./src/components/BoardDragAndDrop.vue")["default"];
     HelloWorld: typeof import("./src/components/HelloWorld.vue")["default"];
@@ -20,7 +20,7 @@ declare module '@vue/runtime-core' {
     RouterView: typeof import('vue-router')['RouterView']
     TaskCard: typeof import("./src/components/TaskCard.vue")["default"];
     TheAlerts: typeof import("./src/components/TheAlerts.vue")["default"];
-    TheDrawer: typeof import("./src/components/TheDrawer.vue")["default"];
+    TheDrawer: typeof import('./src/components/TheDrawer.vue')['default']
     TheWelcome: typeof import("./src/components/TheWelcome.vue")["default"];
     WelcomeItem: typeof import("./src/components/WelcomeItem.vue")["default"];
   }
