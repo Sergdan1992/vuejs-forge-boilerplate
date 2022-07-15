@@ -13,6 +13,8 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore"
   },
   "dependencies": {
+    "@progress/kendo-vue-intl": "^3.4.3",
+    "@progress/kendo-vue-progressbars": "^3.4.3",
     "lodash-es": "^4.17.21",
     "unplugin-vue-components": "^0.20.1",
     "uuid": "^8.3.2",
