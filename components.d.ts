@@ -19,7 +19,8 @@ declare module '@vue/runtime-core' {
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     TaskCard: typeof import("./src/components/TaskCard.vue")["default"];
-    TheAlerts: typeof import("./src/components/TheAlerts.vue")["default"];
+    TheAlert: typeof import('./src/components/TheAlert.vue')['default']
+    TheAlerts: typeof import('./src/components/TheAlerts.vue')['default']
     TheDrawer: typeof import('./src/components/TheDrawer.vue')['default']
     TheWelcome: typeof import("./src/components/TheWelcome.vue")["default"];
     WelcomeItem: typeof import("./src/components/WelcomeItem.vue")["default"];

@@ -1,6 +1,9 @@
 <script setup lang="ts">
 import type { Board } from "@/types";
 import { ref } from "vue";
+import { useAlerts } from "@/stores/Alerts";
+
+const alerts = useAlerts();
 
 const boards = ref<Partial<Board>[]>([
   {
@@ -25,6 +28,10 @@ const boards = ref<Partial<Board>[]>([
     order: "[]",
   },
 ]);
+
+function createBoard() {
+  alerts.success("Board created success!");
+}
 </script>
 
 <template>
