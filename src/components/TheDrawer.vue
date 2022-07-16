@@ -2,10 +2,11 @@
 import { Drawer, DrawerContent } from "@progress/kendo-vue-layout";
 import { useRouter } from "vue-router";
 import { computed, ref } from "vue";
+import { useLocalStorage } from "@vueuse/core";
 
 const router = useRouter();
 
-const expanded = ref(false);
+const expanded = useLocalStorage("drawer-expanded-state", false);
 const expandedIcon = computed(() =>
   expanded.value ? "k-i-arrow-chevron-left" : "k-i-arrow-chevron-right"
 );
@@ -49,22 +50,7 @@ function onSelect({ itemIndex }: { itemIndex: number }) {
 }
 </script>
 <template>
-  <div class="p-2">
-    <div
-      :style="{
-        width: !expanded ? '30px' : 'auto',
-      }"
-      class="w-[150px] k-drawer overflow-hidden"
-    >
-      <img
-        src="https://vuejsforge.com/images/logo.svg"
-        width="150"
-        height="40"
-        class="max-w-none"
-        alt="Vue.js forge"
-      />
-    </div>
-  </div>
+  <TheNavbar />
   <Drawer
     class="h-[90vh]"
     :expanded="expanded"
